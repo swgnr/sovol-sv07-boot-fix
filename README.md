@@ -19,14 +19,17 @@ You should end up with a blank terminal window. After pressing enter, you may be
 
 ![Armbian Login Prompt](img/armbian-login.png)
 
-Getting a login prompt? Great! In this case, the Armbian Linux installation on your board is not damaged. There already are two excellent tutorials on reviving the Klipper Unit for this case:
+Getting a login prompt? Great! In this case, the Armbian Linux installation on your board is not damaged. There already is an excellent tutorial on reviving the Klipper Unit for this case:
 
 * https://github.com/fryc88/sv07
-* https://github.com/TomasOlsson/BrickedSv07-Sv07Plus
 
 Unfortunately, if you don't get a login prompt but a shell where the cursor is prefixed by `=>`, that means you're in the bootloader of the Klipper unit and it is unable to boot into the operating system (Armbian with Makerbase customizations) that is flashed onto the eMMC.
 
 Don't worry, though! This is fixable :)
+
+There are multiple ways to tackle this:
+* https://github.com/TomasOlsson/BrickedSv07-Sv07Plus - Reflashes the internal eMMC with an image
+* This tutorial: Fixes up the existing installation on the eMMC
 
 ## Preparing a boot USB-Drive
 The SV07's Klipper board supports booting from USB. We can use this functionality to boot into a different Linux installation that we can then leverage to fix the broken install on the eMMC.
