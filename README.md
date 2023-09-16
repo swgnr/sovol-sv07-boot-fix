@@ -1,8 +1,10 @@
 # Sovol SV07 Boot Fix
 Sovol has recently released updates for their SV07 and SV07 Plus printers. For some folks, this update has caused their Klipper boads to brick. Luckily, it is possible to un-brick them without any special hardware.
 
+**Note**: This tutorial has only been tested against the SV07 so far.
+
 ## Requirements
-* Bricked SV07 / SV07 Plus Klipper Unit
+* Bricked SV07 Klipper Unit
 * USB-C Cable (for connecting to a PC)
 * USB Thumb Drive (8GB minimum)
 
